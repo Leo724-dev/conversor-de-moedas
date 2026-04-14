@@ -8,6 +8,9 @@ function converterValor(){
 
     const valorDolar = 5.1; // Valor do Dolar Atualmente
     const valorEuro = 5.88; // Valor do Euro Atualmente
+    const valorLibra = 6.79; // Valor da Libra Atualmente
+    const valorIene = 0.0315; // Valor do Iene Atualmente
+
 
     if(moedaPais.value == "dolar"){
         // Caso o valor a converter for DOLAR
@@ -23,6 +26,23 @@ function converterValor(){
             style: "currency",
             currency: "EUR"
         }).format(valor/ valorEuro)
+    }
+
+    if(moedaPais.value == "libra"){
+        // Caso o valor a converter for LIBRA
+        valorMoedaConverter.innerHTML = new Intl.NumberFormat("en-GB", {
+            style: "currency",
+            currency: "GBP"
+        }).format(valor/ valorLibra)
+    }
+
+    if(moedaPais.value == "iene"){
+        // Caso o valor a converter for IENE
+        valorMoedaConverter.innerHTML = new Intl.NumberFormat("ja-JP", {
+            style: "currency",
+            currency: "JPY",
+            maximumFractionDigits: 0
+        }).format(valor/ valorIene)
     }
 
     valorConvertido.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -46,6 +66,22 @@ function mudarBandeira(){
     if(moedaPais.value == "euro"){
         nomeDaMoeda.innerHTML = "Euro"
         bandeira.src = "../img/euro.png"
+    }
+
+    if(moedaPais.value == "libra"){
+        nomeDaMoeda.innerHTML = "Libra"
+        bandeira.src = "../img/libra.avif"
+        bandeira.style.width = "70px";
+        bandeira.style.height = "70px";
+        bandeira.style.borderRadius = "50%";
+    }
+
+    if(moedaPais.value == "iene"){
+        nomeDaMoeda.innerHTML = "Iene"
+        bandeira.src = "../img/iene-moeda.jpg"
+        bandeira.style.width = "70px";
+        bandeira.style.height = "70px";
+        bandeira.style.borderRadius = "50%";
     }
 
     converterValor();
