@@ -60,17 +60,17 @@ function mudarBandeira(){
 
     if(moedaPais.value == "dolar"){
         nomeDaMoeda.innerHTML = "Dólar Americano";
-        bandeira.src = "../image/eua.png";
+        bandeira.src = "../assets/eua.png";
     }
 
     if(moedaPais.value == "euro"){
         nomeDaMoeda.innerHTML = "Euro"
-        bandeira.src = "../image/euro.png"
+        bandeira.src = "../assets/euro.png"
     }
 
     if(moedaPais.value == "libra"){
         nomeDaMoeda.innerHTML = "Libra"
-        bandeira.src = "../image/libra.avif"
+        bandeira.src = "../assets/libra.avif"
         bandeira.style.width = "70px";
         bandeira.style.height = "70px";
         bandeira.style.borderRadius = "50%";
@@ -78,7 +78,7 @@ function mudarBandeira(){
 
     if(moedaPais.value == "iene"){
         nomeDaMoeda.innerHTML = "Iene"
-        bandeira.src = "../image/iene-moeda.jpg"
+        bandeira.src = "../assets/iene-moeda.jpg"
         bandeira.style.width = "70px";
         bandeira.style.height = "70px";
         bandeira.style.borderRadius = "50%";
