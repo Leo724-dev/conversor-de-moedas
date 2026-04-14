@@ -99,3 +99,45 @@ section{
     font-size: 20px;
     font-weight: 700;
 }
+
+@media screen and (max-width: 680px){
+    .logo-gif{
+        width: 50%;
+        height: auto;
+    }
+
+    body{
+        background-position: center center;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    select, input{
+    height: 50px; 
+    font-size: 20px;
+}
+
+    button{
+    height: 50px;
+    font-size: 20px;
+}
+
+.seta{
+    width: 50px;
+}
+
+.moeda{
+    font-size: 20px;
+}
+
+.valor-moeda, .valor-moeda-convertida{
+    font-size: 25px;
+}
+
+}
