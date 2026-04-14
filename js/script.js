@@ -60,7 +60,7 @@ function mudarBandeira(){
 
     if(moedaPais.value == "dolar"){
         nomeDaMoeda.innerHTML = "Dólar Americano";
-        bandeira.src = "../image/estados-unidos (1) 1.png";
+        bandeira.src = "../image/eua.png";
     }
 
     if(moedaPais.value == "euro"){
